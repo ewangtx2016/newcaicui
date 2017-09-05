@@ -26,7 +26,7 @@
         <div class="l_box"> <a href="/teachers-<?php echo $arr['id'];?>.html" class="img"><img src="<?php echo cutimg($arr['pic'],380,353,5);?>" alt=""/></a>
           <div class="l_txt"> <a href="/teachers-<?php echo $arr['id'];?>.html" class="l_tit"><?php echo $arr['english'];?> <?php echo $arr['ren'];?></a>
             <div class="intro"><?php echo intercept($arr['summer'],0,40);?></div>
-            <a href="/teachers-<?php echo $arr['id'];?>.html" class="red_border_btn">进看详情>></a> </div>
+            <a href="/teachers-<?php echo $arr['id'];?>.html" class="red_border_btn">查看详情>></a> </div>
         </div>
       </li><?php $n++;}unset($n); ?>
     </ul>

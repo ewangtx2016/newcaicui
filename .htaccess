@@ -1,0 +1,52 @@
+location / {
+
+
+
+
+
+
+rewrite ^/index.html /index.php last;
+rewrite ^/partners.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_partners last;
+rewrite ^/partners-([0-9]+).html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_partners&page=$1 last;
+rewrite ^/education.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_education last;
+rewrite ^/development.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_development last;
+rewrite ^/enterprise.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_enterprise last;
+rewrite ^/job.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_job last;
+rewrite ^/job-([0-9]+).html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_job&page=$1 last;
+rewrite ^/jobs-([0-9]+).html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_jobs&id=$1 last;
+rewrite ^/teacher.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_teacher last;
+rewrite ^/teacher-([0-9]+).html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_teacher&page=$1 last;
+rewrite ^/teachers-([0-9]+).html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_teachers&id=$1 last;
+rewrite ^/contactus.html /index.php?m=gyzb&c=qt_gyzb_hzhb&a=about_contactus last;
+rewrite ^/contactus-([0-9]+).html /contactus.html?m=gyzb&c=qt_gyzb_hzhb&a=about_contactus&citycontactus=$1 last;
+
+rewrite ^/business.html /index.php?m=ywtx&c=qt_ywtx&a=business last;
+
+rewrite ^/qydt.html /index.php?m=xwzx&c=qt_xwzx&a=qydt last;
+rewrite ^/qydt-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=qydt&page=$1 last;
+rewrite ^/qydts-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=qydts&id=$1 last;
+rewrite ^/mtbd.html /index.php?m=xwzx&c=qt_xwzx&a=mtbd last;
+rewrite ^/mtbd-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=mtbd&page=$1 last;
+rewrite ^/mtbds-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=mtbds&id=$1 last;
+rewrite ^/zyhd.html /index.php?m=xwzx&c=qt_xwzx&a=zyhd last;
+rewrite ^/zyhd-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=zyhd&page=$1 last;
+rewrite ^/zyhds-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=zyhds&id=$1 last;
+rewrite ^/tzgg.html /index.php?m=xwzx&c=qt_xwzx&a=tzgg last;
+rewrite ^/tzgg-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=tzgg&page=$1 last;
+rewrite ^/tzggs-([0-9]+).html /index.php?m=xwzx&c=qt_xwzx&a=tzggs&id=$1 last;
+
+rewrite ^/founder.html /index.php?m=shzr&c=qt_shzr&a=founder last;
+rewrite ^/welfare.html /index.php?m=shzr&c=qt_shzr&a=welfare last;
+rewrite ^/scholarship.html /index.php?m=shzr&c=qt_shzr&a=scholarship last;
+
+
+
+
+
+
+rewrite ^/content-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&c=index&a=show&catid=$1&id=$2&page=$3 last;
+rewrite ^/list-([0-9]+)-([0-9]+).html /index.php?m=content&c=index&a=lists&catid=$1&page=$2 last;
+rewrite ^/tag-([^\.]*)-([0-9]+)-([0-9]+).html /index.php?m=content&c=tag&catid=$2&tag=$1&page=$3 last;
+rewrite ^/comment-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=comment&c=index&a=init&commentid=content_$1-$2-$3 last;
+rewrite ^/([^\.]*).html /index.php?m=member&c=index&a=$1 last;
+}

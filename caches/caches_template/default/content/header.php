@@ -5,7 +5,7 @@
       <div class="nav">
         <ul>
           <li><a href="/">首页</a></li>
-          <li> <a href="/partners.html"<?php echo ban_now($_SERVER['REQUEST_URI'],',partners,education,development,enterprise,job,jobs,teacher,teachers,contactus');?>>关于中博</a>
+          <li> <a href="javascript:;"<?php echo ban_now($_SERVER['REQUEST_URI'],',partners,education,development,enterprise,job,jobs,teacher,teachers,contactus');?>>关于中博</a>
             <ol>
               <li><a href="/partners.html">合作伙伴</a></li>
               <li><a href="/education.html">创新教育</a></li>
