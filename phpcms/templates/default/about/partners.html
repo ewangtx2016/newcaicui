@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$create[title]}</title>
+<meta name="Keywords" content="{$create[keywords]}" />
+<meta name="Description" content="{$create[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<link rel="stylesheet" href="{CSS_PATH}zb/jt_liyulan.css.css"/>
+<script src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jt_main jt_hzhb">
+  <div class="center">
+    <ul class="jt_hzhb_ul cl hov">
+     {loop $partners $arr}
+      <li class="l_fl">{if $arr['url']}<a href="{$arr['url']}" target="javascript:;"  class="l_box">{else}<a href="javascript:;"  class="l_box">{/if}
+        <div class="img"><span><img src="{cutimg($arr['pic'],76,76,5)}" alt=""></span></div>
+        <div class="l_txt">{$arr['title']}</div>
+        <div class="h_txt">
+          <div class="table_box">
+            <h3>{$arr['title']}</h3>
+          </div>
+        </div>
+        </a> </li>{/loop}
+    </ul>
+    <!--<div class="jtz_page">
+        <ul>
+          <li class="li"><a href="#">上一页</a></li>
+          <li><a href="#" class="one">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="li"><a href="#">上一页</a></li>
+        </ul>
+      </div>-->
+		<div id="pages">{$pages}</div>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

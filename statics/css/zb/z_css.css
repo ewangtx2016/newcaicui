@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{width: 1200px; margin: 0 auto;}
+.cf:before, .wrap:before { content: ''; display: table }
+.cf:after, .wrap:after { content: ''; display: table; clear: both }
+.cf, .wrap { *zoom: 1 }
+dl,dt,dd{margin: 0; padding: 0}
+/*公用*/
+.jtz_txt{ text-align: center; padding-bottom: 50px}
+.jtz_txt h2{font-size: 24px;}
+.jtz_txt span{font-size: 36px; color: #2e393f; font-weight: bold; display: block; text-transform:uppercase}
+.jtz_txt b{ color: #555555; background: url(../../images/zb/jtz_ico1.png) center top no-repeat; padding-top: 30px; line-height:22px; display: inline-block; }
+
+/*分页*/
+.jtz_page{text-align: center;}
+.jtz_page li{display: inline-block;}
+.jtz_page li a{background: #fff; border:1px solid #f2f2f2; display: inline-block; height: 36px; line-height: 36px; padding:0 15px; color: #454545; font-size: 12px;}
+.jtz_page li .one,
+.jtz_page li a:hover{background: #f71c5c; border-color: #f71c5c; color: #fff;}
+.jtz_page .li{padding: 0 5px; }
+
+
+/*头部*/
+
+.jtz_txt{ text-align: center; padding-bottom:0;}
+.jtz_txt h2{font-size: 24px;font-weight:normal;}
+.jtz_txt span{font-size: 36px; color: #2e393f; font-weight: bold; display: block; text-transform:uppercase;font-family:Arial;}
+.jtz_txt b{ color: #555555;line-height:22px; display:block;margin:12px 0 0; }
+.jtz_txt i{display:inline-block;width:96px;height:14px;background:url(../../images/zb/jtin_bt.png) no-repeat;margin:4px 0 0;}
+
+
+/*头部*/
+.l_head_87{height:398px;position:relative;}
+.l_head_87 .jtz_txt{position:absolute;left:0;right:0;top:87px;bottom:0;margin:auto;height:92px;background:none;}
+.l_head_87 .jtz_txt span,
+.l_head_87 .jtz_txt h2{color:#fff;}
+
+
+/*集业务体系*/
+.jtz_part1 {padding: 80px 0}
+
+.jtz_part2 .jtin_zbfb{background:url(../../images/zb/jtz_img2.jpg) center no-repeat;}
+.jtz_part2 .jtin_bt{text-align: center; background: none}
+.jtz_part2 .jtin_bt .en{ text-transform:uppercase}
+.jtz_part2 .jtin_bt b{ width:575px; display: inline-block; color: #fff;  background: url(../../images/zb/jtz_ico1.png) center top no-repeat; padding-top: 30px; margin-top: 10px; line-height:22px;}
+
+/*发展历程*/
+.jtz_fz{ margin:80px 50px; position: relative; overflow: hidden;}
+.jtz_fz .t_txt{text-align: center; font-size:120px; color: #f21858; font-family:'Conv_BebasNeue',Sans-Serif; }
+
+
+.jtz_fz ul{ padding-left: 5px;}
+.jtz_fz li{
+    min-height:200px; padding-top:30px; position: relative}
+.jtz_fz .li:before{  content:""; position:absolute; left:-8px; top:-1px; display:inline-block; border: 3px solid #f21858; width:6px; height: 6px; background: #fff; border-radius: 50%;}
+.jtz_fz .li{border-left:3px solid #f21858; position: absolute; left: 0; bottom: 0; padding: 0 25px; }
+.jtz_fz .li .tet{ padding-bottom: 50px; color: #666; line-height: 22px; text-align: justify;}
+.jtz_fz .li .txt{font-family:'Conv_BebasNeue',Sans-Serif; font-size: 60px; color: #f21858;}
+.jtz_fz .arrow {position: absolute; width:640px; left: 50%; margin-left: -320px;  top:42px;}
+.jtz_fz .arrow i{position: absolute; cursor: pointer; top: 0; width: 51px; height: 51px; background-image: url(../../images/zb/ywin_zbgkk_jt.png);  z-index: 99; display: block;}
+.jtz_fz .arrow-left{ left:0px; background-position:0 0}
+.jtz_fz .arrow-left:hover{
+	background-position:0 -51px;
+}
+.jtz_fz .arrow-right{ right:0px; background-position:-51px 0} 
+.jtz_fz .arrow-right:hover{
+	background-position:-51px -51px;
+}
+
+
+
+/*新闻列表*/
+.jtz_news .part1{position: relative; overflow: hidden; margin: 60px 0 40px 0;}
+.jtz_news .part1 img{width: 100%;}
+.jtz_news .part1 .con,
+.jtz_news .part1 .pic{width: 50%; float: left;}
+.jtz_news .part1 .con{position: relative;}
+.jtz_news .part1 .box{position:absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.jtz_news .part1 .cen{ padding:60px 80px 0 165px}
+.jtz_news .part1 .txt{display: inline-block; color: #fff; font-weight: bold; font-size: 16px;}
+.jtz_news .part1 .txt:hover{color: #f71c5c}
+.jtz_news .part1 span{display: block; padding: 10px 0 20px 0}
+.jtz_news .part1 span i{display: inline-block; margin-right: 20px; color:rgba(225,225,225,0.7); font-size: 12px; background-image: url(../../images/zb/jtz_ico3.png); background-repeat: no-repeat; padding-left: 20px;}
+.jtz_news .part1 span .i1{background-position:0 2px}
+.jtz_news .part1 span .i2{background-position:0 -29px; padding-left: 25px;}
+.jtz_news .part1 b{display: block; line-height:22px;color:rgba(225,225,225,0.8); margin-bottom: 30px;
+    height:88px;
+    overflow: hidden; }
+.jtz_news .part1 .a{color:#fff;border: 1px solid #aaadba;border: 1px solid rgba(225,225,225,0.5); padding: 8px 17px; display: inline-block; border-radius: 3px; color: rgba(225,225,225,0.5);}
+.jtz_news .part1 .a i{ font-family: "SimSun"; padding-left: 5px; display: inline-block;}
+.jtz_news .part1 .a:hover{border: 1px solid #fff; color: #fff}
+.jtz_news .part1 .arrow i{ width:51px; height: 51px; display: inline-block; cursor: pointer; background-image:url(../../images/zb/ywin_zbgkk_jt.png); position: absolute; top: 50%; margin-top: -25px;}
+.jtz_news .part1 .arrow-left{left: 35px;}
+.jtz_news .part1 .arrow-left:hover{background-position: 0 -51px }
+.jtz_news .part1 .arrow-right{right:35px; background-position: -51px -0px; }
+.jtz_news .part1 .arrow-right:hover{background-position: -51px -51px;  }
+
+
+
+.jtz_news .part2{margin-bottom: 60px;}
+.jtz_news .part2 .ul{margin: 0 -10px 10px -10px;}
+.jtz_news .part2 .ul li{width: 33.3%; float: left; box-sizing: border-box; padding:0 10px; margin-bottom: 20px;}
+.jtz_news .part2 dl{border: 3px solid #fff; background: #fff; transition: 0.3s;}
+.jtz_news .part2 dd{ padding:25px; }
+.jtz_news .part2 .txt{display: inline-block; color: #333; font-size: 16px; transition: 0.3s;
+    overflow: hidden;
+    height:45px;
+    line-height: 22px;
+    text-align: justify;
+}
+.jtz_news .part2 span{display: block; padding: 10px 0 20px 0}
+.jtz_news .part2 span i{display: inline-block; margin-right: 20px; color:rgba(178,178,178,0.7); font-size: 12px; background-image: url(../../images/zb/jtz_ico2.png); background-repeat: no-repeat; padding-left: 20px;}
+.jtz_news .part2 span .i1{background-position:0 2px}
+.jtz_news .part2 span .i2{background-position:0 -29px; padding-left: 25px;}
+.jtz_news .part2 .a{border: 1px solid #f71c5c; padding: 8px 17px; display: inline-block; border-radius: 3px; color: #f71c5c;}
+.jtz_news .part2 .a i{ font-family: "SimSun"; padding-left: 5px; display: inline-block;}
+
+.jtz_news .part2 dl:hover span i{color:rgba(225,225,225,0.7); background-image: url(../../images/zb/jtz_ico3.png); }
+.jtz_news .part2 dl:hover .txt{color: #fff;}
+.jtz_news .part2 dl:hover .a{background: #f71c5c; border-color: #fff; color: #fff;}
+.jtz_news .part2 dl:hover{background: #f71c5c; border-color: #f71c5c;}
+
+
+/*新闻正文*/
+.jtz_news_cen{margin:40px 0 50px 0}
+.jtz_news_cen .box_l{float: left; width: 800px; background: #fff;}
+.jtz_news_cen .box_l .box{padding:50px 40px; }
+.jtz_news_cen .box_l .txt{position: relative;}
+.jtz_news_cen .box_l .txt:before { content:""; position:absolute; left:-40px; top:5px; display:inline-block; width:5px; height:35px; background: #f71c5c }
+.jtz_news_cen .box_l .txt h2{font-size: 24px;}
+.jtz_news_cen .box_l .txt .bdsharebuttonbox{position: absolute; right: 0; bottom: -5px;}
+.jtz_news_cen .box_l .txt .bdsharebuttonbox a{transition: none;}
+
+.jtz_news_cen .box_l .tit{padding-top:10px; }
+.jtz_news_cen .box_l .txt span{ float: left; margin-right: 10px; color: #b3b3b3;}
+.jtz_news_cen .box_l .tet{ color: #666; line-height: 24px; padding: 35px 0;}
+.jtz_news_cen .box_l .tet img{ max-width: 100%;}
+.jtz_news_cen .box_l .page1{border-top:1px dotted #b2b2b2; padding-top: 25px;}
+.jtz_news_cen .box_l .fh{float: right; border: 1px solid #f71c5c; border-radius: 3px; color: #f71c5c; height: 30px; line-height: 30px; width: 100px; text-align: center;}
+.jtz_news_cen .box_l .fh:hover{background: #f71c5c; color: #fff}
+.jtz_news_cen .box_l ul{ margin-right: 100px;}
+.jtz_news_cen .box_l li{padding-bottom: 10px;}
+.jtz_news_cen .box_l li a{color: #333;}
+.jtz_news_cen .box_l li a:hover{color: #f71c5c;}
+
+.jtz_news_cen .box_r{float: right; width: 373px; background: #fff;}
+.jtz_news_cen .box_r .box{padding:40px 50px; }
+.jtz_news_cen .box_r .t_txt{ padding-bottom: 10px;}
+.jtz_news_cen .box_r .t_txt span{font-size: 16px; font-weight: bold; position: relative;}
+.jtz_news_cen .box_r .t_txt span:before{  content:""; position:absolute; left:0; bottom:-11px; display:inline-block; width:100%; height:1px; background: #f71c5c; }
+.jtz_news_cen .box_r li{border-top:1px solid #dcdcdc; padding:15px 0; clear: both; overflow: hidden;}
+.jtz_news_cen .box_r .txt{display: inline-block; color: #333}
+.jtz_news_cen .box_r .txt:hover{ color: #f71c5c}
+.jtz_news_cen .box_r .titm{display:block; color: #999; font-size: 12px; padding-top: 5px;}
+.jtz_news_cen .box_r .ul1{margin-bottom:15px; }
+.jtz_news_cen .box_r .ul1 .pic{display: block; float: left; width:95px;}
+.jtz_news_cen .box_r .ul1 .con{display: block; margin-left: 110px;}
+
+
+/*联系我们*/
+.jtz_lxwm {padding-bottom: 60px;}
+.jtz_lxwm .part1{background: #fff; padding: 20px; margin-top: 40px;}
+.jtz_lxwm .part1 .con{padding: 40px 0}
+.jtz_lxwm .part1 .l{float: left; width: 340px; line-height: 190px; padding-left: 20px;}
+.jtz_lxwm .part1 .r{float: left; height: 190px; border-left:1px solid #e3e3e3; padding-left: 55px;}
+.jtz_lxwm .part1 .r span{font-weight: bold; font-size: 16px; display: block; padding:10px 0 15px 0;}
+.jtz_lxwm .part1 .r li{ padding:8px 0; color: #666; }
+.jtz_lxwm .part1 .r b{font-weight: bold; }
+.jtz_lxwm .part1 .map img{ max-width: 100%;}
+
+.jtz_lxwm .part2 .txt{padding:50px 0 30px 0 }
+.jtz_lxwm .part2 .txt .l{float: left;}
+.jtz_lxwm .part2 .txt .l h2{ font-size: 18px;}
+.jtz_lxwm .part2 .txt .l span{ display: block; color: #666;}
+.jtz_lxwm .part2 .txt .r{float:right; min-width: 265px;}
+.jtz_lxwm .part2 .ul{margin: 0 -10px; margin-bottom: 10px;}
+.jtz_lxwm .part2 .ul li{width: 50%; float: left; box-sizing: border-box; padding: 0 10px; margin-bottom: 20px;}
+.jtz_lxwm .part2 dl{background: #fff; padding:25px 30px;}
+.jtz_lxwm .part2 dt{font-weight: bold; font-size: 16px;  padding-bottom: 15px;}
+.jtz_lxwm .part2 dd span{display: block; margin: 8px 0; color: #666; background: url(../../images/zb/jtz_ico5.png) no-repeat; padding-left: 30px;}
+.jtz_lxwm .part2 dd .p2{background-position: 0 -40px;}
+.jtz_lxwm .part2 dd .p3{background-position: 0 -85px;}
+.jtz_lxwm .part2 dd .p4{background-position: 0 -123px;}
+
+
+

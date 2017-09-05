@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$create[title]}</title>
+<meta name="Keywords" content="{$create[keywords]}" />
+<meta name="Description" content="{$create[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<link rel="stylesheet" href="{CSS_PATH}zb/jt_liyulan.css.css"/>
+<script src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jt_main jt_gyhd">
+  <div class="center">
+    <ul class="jt_gyhd_top cl hov">{pc:get sql="SELECT * FROM `zb_xwzx` WHERE lei='社会公益' and status_del=0 and tui=1 ORDER BY addtime DESC" num=1}{loop $data $arr}
+      <li class="l_fl sp">
+        <div class="l_box"> <a  href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}" class="img"><img src="{cutimg($arr['pic2'],792,513,5)}" alt=""/></a>
+          <div class="l_txtBox">
+            <h3 class="l_tit"><a href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}">{intercept($arr['title'],0,22)}</a></h3>
+            <div class="l_intro">{intercept($arr['summer'],0,110)}</div>
+            <a href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}" class="jtin_btn">查看详情>></a> </div>
+        </div>
+      </li>{/loop}{/pc}
+      {pc:get sql="SELECT * FROM `zb_xwzx` WHERE lei='社会公益' and status_del=0 ORDER BY addtime DESC"}
+      {loop $data $arr}
+      <li class="l_fl {if $i==0}sp_li{/if} li">
+        <div class="l_box"> <a  href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}" class="img"><img src="{cutimg($arr['pic'],380,158,5)}" alt=""/></a>
+          <div class="l_txt">
+            <h4 class="l_tit_con"><a href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}">{intercept($arr['title'],0,30)}</a></h4>
+            <div class="l_intro_con">{intercept($arr['summer'],0,38)}</div>
+            <div class="btn_box"> <a href="index.php?m=shzr&c=qt_shzr&a=welfares&id={$arr['id']}" class="red_border_btn">查看详情>></a> </div>
+          </div>
+        </div>
+      </li>
+      {$i++}
+      {/loop}
+      {/pc}
+    </ul>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>
+<script>
+	$("#pages a").eq(0).css("display","none");
+</script>

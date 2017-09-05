@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$create[title]}</title>
+<meta name="Keywords" content="{$create[keywords]}" />
+<meta name="Description" content="{$create[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<link rel="stylesheet" href="{CSS_PATH}zb/jt_liyulan.css.css"/>
+<script src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>创新教育</h2>
+    <span>Innovation</span> <i></i> </div>
+</div>
+<div class="jt_main jt_gybo_cxjy">
+  <div class="center">
+    <ul class="jt_gybo_cxjy_b1 cl">{pc:get sql="SELECT * FROM `zb_gyzb_cxjy` WHERE status_del=0 ORDER BY paixu DESC"}
+         {loop $data $edu}
+      <li class="l_fl">
+        <div class="l_box">
+          <div class="icon"><img src="{$edu[pic]}" alt="" /></div>
+          <div class="l_txt">
+            <h3 class="l_tit">{$edu[title]}</h3>
+            <div class="l_cont">{$edu[content]}</div>
+          </div>
+        </div>
+      </li>
+         {/loop}
+          {/pc}
+    </ul>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

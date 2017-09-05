@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$job[title]}</title>
+<meta name="Keywords" content="{$job[keywords]}" />
+<meta name="Description" content="{$job[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<link rel="stylesheet" href="{CSS_PATH}zb/jt_liyulan.css.css"/>
+<script src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jt_main jt_gyzb_jrzb">
+  <div class="center">
+    <div class="jtz_txt">
+      <h2>{$job[one]}</h2>
+      <span>{$job[english]}</span> <i></i> {$job[content]} </div>
+    <ul class="jt_gyzb_jrzb_ul cl" style="margin-bottom:20px;">
+     {loop $joblist $arr}
+      <li class="l_fl">
+        <div  class="l_box"> <a href="/jobs-{$arr['id']}.html" class="l_tit">{intercept($arr['position'],0,14)}</a>
+          <div class="intro"> <i class="i_red">{$arr[money]}</i><i class="l_xian">{parentlinkagename($arr[city])}</i><i>{$arr[education]}</i> </div>
+          <div class="border-intro"> {welfare($arr['welfare'],3)} </div>
+          <div class="fen_xian"></div>
+          <div class="l_gshi">{$arr[company]}</div>
+          <div class="l_time">发布日期：{date('Y-m-d',$arr['moditime'])}</div>
+          {if $arr[hot]==1}<em class="l_jiaji"></em>{/if} </div>
+      </li>{/loop}
+    </ul>
+    <!--<div class="jtz_page">
+        <ul>
+          <li class="li"><a href="#">上一页</a></li>
+          <li><a href="#" class="one">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="li"><a href="#">上一页</a></li>
+        </ul>
+      </div>-->
+		<div id="pages">{$pages}</div>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

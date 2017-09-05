@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no, email=no" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="shortcut icon" href="/favicon.ico" />
+<title>{$ywtx[title]}</title>
+<meta name="Keywords" content="{$ywtx[keywords]}" />
+<meta name="Description" content="{$ywtx[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<script type="text/javascript" src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/z_css.css" />
+<script>
+$(function(){
+	$("#back .map").mouseenter(function(){
+		var cla = $(this).attr("data-class");
+		$(".back").attr("class","back "+cla)
+	})
+	$("#back .map").mouseleave(function(){
+		$(".back").attr("class","back")
+	})
+})	
+</script>
+<style>
+  .backno{
+    width:0;
+    height:0;
+  }
+.jtz_part1 .back{ width: 768px; height:768px; background-image: url({$ywtx[pic]}); background-repeat: no-repeat; background-position:0 0; margin:0px auto;}
+.jtz_part1 .back1{
+  background-position: 0 calc(-769px);
+}
+.jtz_part1 .back2{
+  background-position: 0 calc(-769px*2);
+}
+.jtz_part1 .back3{
+  background-position: 0 calc(-769px*3);
+}
+.jtz_part1 .back4{
+  background-position: 0 calc(-769px*4);
+}
+.jtz_part1 .back5{
+  background-position: 0 calc(-769px*5);
+}
+.jtz_part1 .back6{
+  background-position: 0 calc(-769px*6);
+}
+.jtz_part1 .back7{
+  background-position: 0 calc(-769px*7);
+}
+</style>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jtz_part1">
+  <div class="wrap">
+    <div class="jtz_txt">
+      <h2>{$ywtx[one]}</h2>
+      <span>{$ywtx[english]}</span> <b>
+      {$ywtx[content]}
+      </b> </div>
+    <div class="backno back1 back2 back3 back4 back5 back6 back7"></div>
+    <div class="back" id="back"> <img src="{IMG_PATH}zb/jtz_img2.png" usemap="#Map"/>
+      <map name="Map">
+        <area shape="poly" coords="112,114,252,22,424,4,389,311,335,331" href="#" class="map" data-class="back1">
+        <area shape="poly" coords="426,4,585,53,710,175,442,343,392,312" href="#" class="map" data-class="back2">
+        <area shape="poly" coords="443,345,709,181,757,304,746,504,450,404" href="#" class="map" data-class="back3">
+        <area shape="poly" coords="453,406,744,506,650,663,517,741,410,449,404,452" href="#" class="map" data-class="back4">
+        <area shape="poly" coords="406,452,508,744,355,763,184,711,348,445" href="#" class="map" data-class="back5">
+        <area shape="poly" coords="340,441,178,706,60,585,5,431,307,395" href="#" class="map" data-class="back6">
+        <area shape="poly" coords="308,388,5,423,26,244,113,120,327,332" href="#" class="map" data-class="back7">
+      </map>
+    </div>
+  </div>
+</div>
+<div class="jtz_part2">
+  <div class="jtin_zbfb in_anm">
+    <div class="jtin_bt"> <span class="ch">{$allfb[one]}</span> <span class="en">{$allfb[english]}</span> {$allfb[content]} </div>
+    <div class="box">
+      <div class="left">
+        <ul>
+          <li><span class="span1">{$allfb[title]}</span><span>全国分公司</span></li>
+          <li><span class="span1">{$allfb[keywords]}</span><span>全国教学点</span></li>
+          <li><span class="span1">{$allfb[jianjie]}</span><span>全国教师团队</span></li>
+          <li><span class="span1">{$allfb[pic4]}</span><span>累计培养学员</span></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="bt">{$allfb[pic2]}<span>{$allfb[pic3]}</span></div>
+        <ul>{pc:get sql="SELECT * FROM `zb_ywtx_city` WHERE status_del=0 ORDER BY paixu DESC" num=1000}
+         {loop $data $city}
+          <li><a href="{$city[url]}" target="_blank">{$city[title]}</a></li>{/loop}
+          {/pc}
+        </ul>
+      </div>
+      <div class="map"><img src="{$allfb['pic']}"/></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

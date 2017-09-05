@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no, email=no" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="shortcut icon" href="/favicon.ico" />
+<title>{$lxwmm[title]}</title>
+<meta name="Keywords" content="{$lxwmm[keywords]}" />
+<meta name="Description" content="{$lxwmm[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<script type="text/javascript" src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+<script src="{JS_PATH}zb/ui-select.js"></script>
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/z_css.css" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/ui-select.css">
+<script>
+$(function(){
+    $('.ui-select').chosen();
+});
+$(function(){
+	$('#citycontactus').change(function(){
+  		$('#form').submit();
+	})
+})
+</script>
+</head>
+
+<body style="background: #f2f5fa;">
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="wrap">
+  <div class="jtz_lxwm">
+    <div class="part1">
+      <div class="con cf">
+        <div class="l"><img src="{IMG_PATH}zb/jtz_img7.jpg"/></div>
+        <div class="r"> {$lxwmm[jianjie]} </div>
+      </div>
+      <div class="map"><img src="{cutimg($lxwmm['pic'],1160,334,5)}"/></div>
+    </div>
+    <div class="part2">
+      <div class="txt cf">
+        <div class="l">
+          <h2>分部地址</h2>
+          <span>中博诚通有遍及全国的49家分部，桃李满天下</span></div>
+        <div class="r">
+         <form action="/contactus.html" id="form">
+          <select name="citycontactus" id="citycontactus" class="ui-select">
+            <option value="选择城市">选择城市</option>
+            {citylist($citycontactus)}
+          </select>
+			</form>
+        </div>
+      </div>
+      <ul class="ul cf">
+       {loop $joblist $arr}
+        <li>
+          <dl>
+            <dt>{$arr[title]}</dt>
+            <dd> <span class="p1">{$arr[tel]}</span> <span class="p2">{$arr[fax]}</span> <span class="p3">{$arr[email]}</span> <span class="p4">{$arr[address]}</span> </dd>
+          </dl>
+        </li>{/loop}
+      </ul>
+      <!--<div class="jtz_page">
+        <ul>
+          <li class="li"><a href="#">上一页</a></li>
+          <li><a href="#" class="one">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">...</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="li"><a href="#">上一页</a></li>
+        </ul>
+      </div>-->
+		<div id="pages">{$pages}</div>
+    </div>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

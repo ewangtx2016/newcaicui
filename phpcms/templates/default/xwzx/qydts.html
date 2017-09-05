@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no, email=no" />
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="shortcut icon" href="/favicon.ico" />
+<title>{$qydt[title]}</title>
+<meta name="Keywords" content="{$qydt[keywords]}" />
+<meta name="Description" content="{$qydt[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<script type="text/javascript" src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/z_css.css" />
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</head>
+
+<body style="background: #f2f5fa;">
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jtz_news_cen">
+  <div class="wrap">
+    <div class="box_l">
+      <div class="box">
+        <div class="txt">
+          <h2>{$qydt[title]}</h2>
+          <div class="tit cf"> <span>发布时间：{date('Y-m-d',$qydt['addtime'])}</span> <span>点击次数：{$qydt[hits]}次</span> </div>
+          <div class="bdsharebuttonbox">
+              <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+              <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+              <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+              <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+              <a href="#" class="bds_more" data-cmd="more"></a> </div>
+        </div>
+          <script>
+              $('.bds_weixin').click(function(){
+                  $('.bdshare_dialog_box,#bdshare_dialog_bg').hide();
+              })
+              
+              $('.bds_more').click(function(){
+                  $('#bdshare_weixin_qrcode_dialog_bg,#bdshare_weixin_qrcode_dialog').hide();
+              })
+              
+              $('body').click(function(event){
+              	if(event.target === this){
+              		$('.bdshare_dialog_box,#bdshare_weixin_qrcode_dialog_bg,#bdshare_weixin_qrcode_dialog').hide();
+              	}
+              })
+              
+          </script>
+        <div class="tet">
+          {$qydt[content]}
+        </div>
+        <div class="page1 cf"> <a href="/qydt.html" class="fh">返回列表</a>
+          <ul>
+            <li><b>上一条：</b><a href="/qydts-{$upspage['id']}.html">{$upspage['title']}</a></li>
+            <li><b>下一条：</b><a href="/qydts-{$downspage['id']}.html">{$downspage['title']}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box_r">
+      <div class="box">
+        <div class="t_txt"><span>媒体报道</span></div>
+        <ul class="ul1">
+         {pc:get sql="SELECT * FROM `zb_xwzx` WHERE lei='媒体报道' and status_del=0 ORDER BY addtime DESC" num=5}
+         {loop $data $mtbd}
+          <li> <a href="/mtbds-{$mtbd[id]}.html" class="pic"><img src="{cutimg($mtbd['pic'],94,62,5)}"/></a> <span class="con"> <a href="/mtbds-{$mtbd[id]}.html" class="txt">{intercept($mtbd['title'],0,28)}</a> <span class="titm">发布日期：{date('Y-m-d',$mtbd['addtime'])}</span> </span> </li>
+          {/loop}
+          {/pc}
+        </ul>
+        <div class="t_txt"><span>重要活动</span></div>
+        <ul>
+          {pc:get sql="SELECT * FROM `zb_xwzx` WHERE lei='重要活动' and status_del=0 ORDER BY addtime DESC" num=5}
+         {loop $data $zyhd}
+          <li> <a href="/zyhds-{$zyhd[id]}.html" class="txt">{intercept($zyhd['title'],0,28)}</a> <span class="titm">发布日期：{date('Y-m-d',$zyhd['addtime'])}</span> </li>
+          {/loop}
+          {/pc}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>

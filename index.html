@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>中博教育网</title>
+<meta name="Keywords" content="中博教育" />
+<meta name="Description" content="中博教育" />
+<link rel="stylesheet" type="text/css" href="http://zb.php.xmfeel.com/statics/css/zb/css.css" />
+<link rel="stylesheet" href="http://zb.php.xmfeel.com/statics/css/zb/owl.carousel.min.css">
+<script src="http://zb.php.xmfeel.com/statics/js/zb/jquery-1.10.1.min.js"></script>
+<script src="http://zb.php.xmfeel.com/statics/js/zb/owl.carousel.min.js"> </script>
+<script type="text/javascript" src="http://zb.php.xmfeel.com/statics/js/zb/jt_head.js"></script>
+<script>$(function(){
+	$('#owl-carousel').owlCarousel({
+		items:1,
+		smartSpeed:900,//切换过渡时间
+		loop:true, //无限循环切换
+		autoplay:true, //是否自动轮播
+		autoplayTimeout:5000, //自动轮播时间
+		dots:true, //是否显示原点导航
+		nav:true,   //是否左右切换
+		mouseDrag:false //关闭pc端拖动
+	});
+})
+</script>
+<!----新闻轮播---->
+<script>
+$(function(){
+	$('#owl-carousel2').owlCarousel({
+		
+		loop:true, //无限循环切换
+		dots:false, //是否显示原点导航
+		dotsEach:true, //每个区块一个圆点
+		nav:true,   //是否左右切换
+		mouseDrag:false, //关闭pc端拖动
+		responsive:{
+			0:{items:1,margin:0},
+			1002:{items:2,margin:30},
+			1200:{items:3,margin:30}
+		}
+	});
+})
+</script>
+
+<!----荣誉轮播---->
+<link rel="stylesheet" href="http://zb.php.xmfeel.com/statics/css/zb/idangerous.swiper.css">
+<link rel="stylesheet" href="http://zb.php.xmfeel.com/statics/css/zb/idangerous.swiper.3dflow.css">
+<script src="http://zb.php.xmfeel.com/statics/js/zb/idangerous.swiper.min.js"></script>
+<script src="http://zb.php.xmfeel.com/statics/js/zb/idangerous.swiper.3dflow.js"> </script>
+<script>
+$(function(){
+     var mySwiper = new Swiper('.swiper-container',{
+    slidesPerView:3,
+    loop:true,
+    tdFlow: {
+      rotate : 0,
+      stretch :326,
+      depth: 400,
+      modifier : 1,
+      shadows:true,
+      pagination: '.pagination',
+      grabCursor: true,
+      paginationClickable: true
+    },
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+  })
+     $('.arrow-left').on('click', function(e){
+       e.preventDefault()
+       mySwiper.swipePrev()
+     })
+     $('.arrow-right').on('click', function(e){
+       e.preventDefault()
+       mySwiper.swipeNext()
+     })
+});
+$(function(){
+	$('#owl-carousel3').owlCarousel({
+		loop:true, //无限循环切换
+		dots:false, //是否显示原点导航
+		dotsEach:true, //每个区块一个圆点
+		nav:true,   //是否左右切换
+		mouseDrag:false, //关闭pc端拖动
+		responsive:{
+			0:{items:1,margin:0},
+			1002:{items:2,margin:30},
+			1200:{items:5,margin:24}
+		}
+	});
+})
+</script>
+</head>
+
+<body>
+<div class="jtin_top">
+  <div class="jt_head_box">
+    <div class="logo"> <a class="logo1" href="/"><img src="http://zb.php.xmfeel.com/statics/images/zb/jt_logo.png"/></a> <span class="logo2"><img src="http://zb.php.xmfeel.com/statics/images/zb/jt_dy.png"/></span> </div>
+    <div class="right">
+      <div class="nav">
+        <ul>
+          <li><a href="/" class="one">首页</a></li>
+          <li> <a href="/partners.html">关于中博</a>
+            <ol>
+              <li><a href="/partners.html">合作伙伴</a></li>
+              <li><a href="/education.html">创新教育</a></li>
+              <li><a href="/development.html">发展历程</a></li>
+              <li><a href="/enterprise.html">企业荣誉</a></li>
+              <li><a href="/job.html">加入中博</a></li>
+              <li><a href="/teacher.html">师资团队</a></li>
+              <li><a href="/contactus.html">联系我们</a></li>
+            </ol>
+          </li>
+          <li> <a href="/business.html">业务体系</a></li>
+          <li> <a href="/qydt.html">新闻中心</a>
+            <ol>
+              <li><a href="/qydt.html">企业动态</a></li>
+              <li><a href="/mtbd.html">媒体报道</a></li>
+              <li><a href="/zyhd.html">重要活动</a></li>
+            </ol>
+          </li>
+          <li> <a href="/founder.html">社会责任</a>
+            <ol>
+              <li><a href="/founder.html">创始人寄语</a></li>
+              <li><a href="/welfare.html">社会公益</a></li>
+              <li><a href="/scholarship.html">奖学金</a></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="right_r"> <a >找课程</a> <span>4006-026-018</span> </div>
+    </div>
+  </div>
+</div>
+<div class="jtin_ban">
+  <div class="owl-carousel" id="owl-carousel">             <div class="item" style="background-image: url(statics/gyzb/2017/0819/20170819102221_925.jpg); ">
+      <div class="nr"> <span class="txt"><img src="statics/gyzb/2017/0819/20170819102221_750.png" /></span> <span class="btn"><a href="#">查看更多</a></span> </div>
+    </div>    <div class="item" style="background-image: url(statics/gyzb/2017/0819/20170819101708_655.jpg); ">
+      <div class="nr"> <span class="txt"><img src="statics/gyzb/2017/0819/20170819101708_119.png" /></span> <span class="btn"><a href="#">查看更多</a></span> </div>
+    </div>                    
+  </div>
+</div>
+<div class="jtin_tz">
+  <div class="box">
+    <div class="left">通知公告:</div>
+    <div class="btn"><a href="/tzgg.html">查看详情</a></div>
+    <div id="myscroll" class="cls_container">
+      <ul>                 <li><a href="/tzggs-28.html" target="_blank">这是一条测试通知公告</a></li>                </ul>
+    </div>
+  </div>
+  <!----公告----> 
+  <script type="text/javascript">
+var myscroll = function(id, param) {
+	var element = document.getElementById(id);
+	element.innerHTML += element.innerHTML;
+	var height = param.height;
+	var maxHeight = element.scrollHeight / 2;
+	var counter = 0;
+	var isScroll = true;
+	var timer = setTimeout(scroll, 1000);
+	var counter = 0;
+	element.onmouseenter = function() {
+		isScroll = false;
+	}	
+	element.onmouseleave = function() {
+		isScroll = true;
+		if(timer === ""){
+			timer = setTimeout(scroll, 1000)
+		}
+	}
+
+	function scroll() {
+		if (element.scrollTop >= maxHeight) {
+			element.scrollTop = 0;
+		}
+		if (!isScroll&&counter===0){
+			clearTimeout(timer);
+			timer="";
+			return false;
+		}
+		if (counter < param.height) {
+			element.scrollTop += 1;
+			counter++;
+			timer = setTimeout(scroll, param.speed)
+		}else{
+			counter = 0;
+			timer = setTimeout(scroll, param.duration);
+		}
+	}
+}
+	myscroll('myscroll', {
+		height: 74,
+		speed: 50,
+		duration: 1500,
+	})
+</script> 
+</div>
+<div class="jtin_zbll" id="box1">
+  <div class="jtin_bt"> <span class="ch">中博力量</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="con">
+    <ul>      <li> <a href="#" class="li_box"> <span class="bg"></span> <span class="span1"> <span class="sz"><i>49</i></span> <span class="tit">49个分部149个教学点</span> </span> <span class="zy">经过十年的教育沉淀北京中博新视网络教育科技发展有限公司拥有149个教学点</span> </a> </li>
+      <li> <a href="#" class="li_box"> <span class="bg"></span> <span class="span1"> <span class="sz"><i>41</i></span> <span class="tit">49个分部149个教学点</span> </span> <span class="zy">经过十年的教育沉淀北京中博新视网络教育科技发展有限公司拥有149个教学点</span> </a> </li>
+      <li> <a href="#" class="li_box"> <span class="bg"></span> <span class="span1"> <span class="sz"><i>42</i></span> <span class="tit">49个分部149个教学点</span> </span> <span class="zy">经过十年的教育沉淀北京中博新视网络教育科技发展有限公司拥有149个教学点</span> </a> </li>
+      <li> <a href="#" class="li_box"> <span class="bg"></span> <span class="span1"> <span class="sz"><i>43</i></span> <span class="tit">49个分部149个教学点</span> </span> <span class="zy">经过十年的教育沉淀北京中博新视网络教育科技发展有限公司拥有149个教学点</span> </a> </li>
+      <li> <a href="#" class="li_box"> <span class="bg"></span> <span class="span1"> <span class="sz"><i>44</i></span> <span class="tit">49个分部149个教学点</span> </span> <span class="zy">经过十年的教育沉淀北京中博新视网络教育科技发展有限公司拥有149个教学点</span> </a> </li>    </ul>
+  </div>
+</div>
+<div class="jtin_zbyw" id="box2">
+  <div class="jtin_bt"> <span class="ch">中博业务</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="con">
+    <ul>               <li> <a href="#"> <span class="img"><img src="uploadfile/img/2017/0819/633_367_150311043385774.jpg" /></span> <span class="bg"></span> <span class="tb"></span> <span class="tit">就业培训<i>english</i></span> <span class="txt">就业培训就业培训就业培训就业培训就业培训</span> </a> </li>              </ul>
+  </div>
+  <div class="btn"><a href="/qydt.html" class="jtin_btn">了解更多</a></div>
+</div>
+<div class="jtin_zbxw" id="box3">
+  <div class="jtin_bt"> <span class="ch">中博新闻</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="con">
+    <div class="owl-carousel2" id="owl-carousel2">
+                    <div class="item" > <a href="/zyhds-21.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150311171474295.jpg" /></a>
+        <div class="nr"> <a href="/zyhds-21.html" target="_blank" class="bt">中博诚通“带盐人”大赛全国总决...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/zyhds-21.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/zyhds-20.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150311132288194.jpg" /></a>
+        <div class="nr"> <a href="/zyhds-20.html" target="_blank" class="bt">寻找中博新英雄</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/zyhds-20.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/zyhds-19.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150311071639105.jpg" /></a>
+        <div class="nr"> <a href="/zyhds-19.html" target="_blank" class="bt">中博诚通12周年盛典，荣耀征程...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/zyhds-19.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/mtbds-18.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150311002257344.jpg" /></a>
+        <div class="nr"> <a href="/mtbds-18.html" target="_blank" class="bt">JHC大赛中博学子表现优异 斩...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/mtbds-18.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/mtbds-17.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150310958652673.jpg" /></a>
+        <div class="nr"> <a href="/mtbds-17.html" target="_blank" class="bt">中博诚通与成都理工大学工程技术...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/mtbds-17.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/mtbds-16.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150310857178295.jpg" /></a>
+        <div class="nr"> <a href="/mtbds-16.html" target="_blank" class="bt">【名企参观播报】小博带你走进“...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/mtbds-16.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/qydts-15.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150310789176445.png" /></a>
+        <div class="nr"> <a href="/qydts-15.html" target="_blank" class="bt">中博诚通&WILEY签约仪式圆...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/qydts-15.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/qydts-14.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150310735443645.jpg" /></a>
+        <div class="nr"> <a href="/qydts-14.html" target="_blank" class="bt">荣耀时刻 | 中博诚通荣膺20...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/qydts-14.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+            <div class="item" > <a href="/qydts-13.html" target="_blank"><img src="uploadfile/img/2017/0819/380_245_150310669624953.jpg" /></a>
+        <div class="nr"> <a href="/qydts-13.html" target="_blank" class="bt">广东财经大学·中博诚通FRM金...</a>
+          <div class="bz"><span class="time">2017-05-31</span><span class="read">（999） 次</span></div>
+          <div class="zy"></div>
+          <div class="btn"><a href="/qydts-13.html" target="_blank" class="jtin_btn">查看详情 >></a></div>
+        </div>
+      </div>
+                    </div>
+  </div>
+</div>
+<div class="jtin_zbzgs" id="box4" style="background: url(http://zb.php.xmfeel.com/statics/images/zb/jtin_zbzgs.jpg) no-repeat center; background-size:cover;">
+  <div class="jtin_bt"> <span class="ch">中博旗下子公司</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="con">
+    <ul>               <li> <a href="#" class="li_box"> <span class="sj"></span> <span class="logo"><img src="uploadfile/img/2017/0819/150311318362890.png" /></span> <span class="tet">旗下子公司旗下子公司</span> </a> </li>
+                    </ul>
+  </div>
+</div>
+<div class="jtin_zbry" id="box5">
+  <div class="jtin_bt"> <span class="ch">资质荣誉</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="glory_cont">
+    <div class="a_box"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a> </div>
+    <div class="center">
+      <div class="boxWrap">
+        <div class="box">
+          <div class="swiper-container" id="swiper-container2">
+            <ul class="swiper-wrapper">                       <li class="swiper-slide" >
+                <div class="pic1"><img src="uploadfile/img/2017/0819/655_462_150311518381795.jpg" /></div>
+                <div class="txt">腾讯网“影响力教育品牌”大奖</div>
+              </li>              <li class="swiper-slide" >
+                <div class="pic1"><img src="uploadfile/img/2017/0819/655_462_150311536353819.jpg" /></div>
+                <div class="txt">新华网“品牌知名度教育机构”大奖</div>
+              </li>              <li class="swiper-slide" >
+                <div class="pic1"><img src="uploadfile/img/2017/0819/655_462_150311548331194.png" /></div>
+                <div class="txt">JHC大比拼角逐全国总冠军</div>
+              </li>              <li class="swiper-slide" >
+                <div class="pic1"><img src="uploadfile/img/2017/0819/655_462_150311830981454.jpg" /></div>
+                <div class="txt">中博诚通2016年度“品牌知名度教育机构”</div>
+              </li>                      </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jtin_zbfb" id="box6">  <div class="jtin_bt"> <span class="ch">全国分公司</span> <span class="en">NATIONAL BRANCH</span> </div>
+  <div class="box">
+    <div class="left">
+      <ul>
+        <li><span class="span1">49</span><span>全国分公司</span></li>
+        <li><span class="span1">118</span><span>全国教学点</span></li>
+        <li><span class="span1">1000+</span><span>全国教师团队</span></li>
+        <li><span class="span1">100000+</span><span>累计培养学员</span></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="bt">十三年，49城<span>中博诚通有遍及全国的49家分部</span></div>
+      <ul>                   <li><a href="http://www.163.com" target="_blank">北京</a></li>                </ul>
+    </div>
+    <div class="map"><img src="uploadfile/img/2017/0818/150303191050288.png"/></div>
+    <div class="clear"></div>
+  </div></div>
+<div class="jtin_zbhb" id="box7">
+  <div class="jtin_bt"> <span class="ch">合作伙伴</span> <span class="en">ADVANTAGE</span> </div>
+  <div class="con">
+    <div id="warp_kh_ul" class="li_hong">
+      <div class="owl-carousel2" id="owl-carousel3">                	<div class="pic2 item">
+                	<a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310362678569.jpg" ></span>
+                                    <span class="span2">上海应用技术学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">上海应用技术学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>                    <a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310407688199.jpg" ></span>
+                                    <span class="span2">中山大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">中山大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>                <div class="pic2 item">
+                	<a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310379386781.jpg" ></span>
+                                    <span class="span2">山东青年政治学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">山东青年政治学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>                    <a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310455373705.jpg" ></span>
+                                    <span class="span2">中原工学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">中原工学院</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>                <div class="pic2 item">
+                	<a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310385710448.jpg" ></span>
+                                    <span class="span2">山东建筑大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">山东建筑大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>                    <a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310464837627.jpg" ></span>
+                                    <span class="span2">中国传媒大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">中国传媒大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>                <div class="pic2 item">
+                	<a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310394285857.jpg" ></span>
+                                    <span class="span2">山东科技大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">山东科技大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>                    <a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310473049002.jpg" ></span>
+                                    <span class="span2">浙江财经大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">浙江财经大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>                <div class="pic2 item">
+                	<a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310400578646.jpg" ></span>
+                                    <span class="span2">山东财经大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">山东财经大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>                    <a href="" class="a_box">
+                        <div class="a">
+                            <div class="bai">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="uploadfile/img/2017/0819/76_76_150310481555678.jpg" ></span>
+                                    <span class="span2">天津外国语大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                            <div class="hong">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr><td>
+                                    <span class="span1"><img src="" ></span>
+                                    <span class="span2">天津外国语大学</span>
+                                    </td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </a>
+                </div>     </div>
+    </div>
+  </div>
+</div>
+<div class="jtin_bot">
+  <div class="bot1">
+    <div class="box">
+      <div class="add">联系地址<span>北京市海淀区北三环西路32号恒润大厦1202室</span></div>
+      <div class="add mail">联系邮箱<span>service@caicui.com</span></div>
+      <div class="tel">服务电话<span>4006 - 026 - 018</span></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="bot2">
+    <div class="box">
+      <div class="left"> <span>关于我们</span> 经过十年的教育沉淀，北京中博新视网络教育科技发展有限
+        公司重磅推出财萃网(www.caicui.com)，并在2014年以全新
+        面貌和理念重装上线，专注于泛财经网络教育。依托于战略
+        合作伙伴优质的地面财经教育资源，财萃网拥有152位专业
+        师资，遍布全国的43个统<a href="#">[详情]</a> </div>
+      <div class="right">
+        <ul>
+          <li> <a href="/partners.html" class="a1">关于中博</a> <a href="/partners.html">合作伙伴</a> <a href="/education.html">创新教育</a> <a href="/development.html">发展历程</a> <a href="/enterprise.html">企业荣誉</a> <a href="/job.html">加入中博</a> <a href="/teacher.html">师资团队</a> <a href="/contactus.html">联系我们</a> </li>
+          <li> <a href="/business.html" class="a1">业务体系</a> </li>
+          <li> <a href="/qydt.html" class="a1">新闻中心</a> <a href="/qydt.html">企业动态</a> <a href="/mtbd.html">媒体报道</a> <a href="/zyhd.html">重要活动</a> </li>
+          <li> <a href="/founder.html" class="a1">社会责任</a> <a href="/founder.html">创始人寄语</a> <a href="/welfare.html">社会公益</a> <a href="/scholarship.html">奖学金</a> </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="bot3">
+    <div class="box">
+      <div class="left">COPYRIGHT © 2016 财萃网 ALL RIGHTS RESERVED. 京ICP备<span>14035765号-1</span></div>
+      <div class="right">京公网安备11010802015492</div>
+    </div>
+  </div>
+</div>
+<!----效果----> 
+<script>
+	(function(){
+		var win = $(window);
+		var winTop = 0;
+		var winhei = win.height()*0.7;
+		var winhei2 = win.height()*0.4;
+		var box1 = $("#box1");
+		var box2 = $("#box2");
+		var box3 = $("#box3");
+		var box4 = $("#box4");
+		var box5 = $("#box5");
+		var box6 = $("#box6");
+		var box7 = $("#box7");
+		win.resize(function(e) {
+			winhei = win.height()*0.7;
+			winhei2 = win.height()*0.4;
+		});
+		win.scroll(function(){
+			winTop = win.scrollTop();
+			scroll_fun(winTop)
+		});
+		
+		function scroll_fun(t){
+			if(t >= box1.offset().top - winhei){
+				box1.addClass("in_anm");
+			}
+			if(t >= box2.offset().top - winhei){
+				box2.addClass("in_anm");
+			}
+			if(t >= box3.offset().top - winhei){
+				box3.addClass("in_anm");
+			}
+			if(t >= box4.offset().top - winhei){
+				box4.addClass("in_anm");
+			}
+			if(t >= box5.offset().top - winhei){
+				box5.addClass("in_anm");
+			}
+			if(t >= box6.offset().top - winhei){
+				box6.addClass("in_anm");
+			}
+			if(t >= box7.offset().top - winhei){
+				box7.addClass("in_anm");
+			}
+		}
+		//scroll_fun($(window).height());
+	})();
+</script>
+</body>
+</html>

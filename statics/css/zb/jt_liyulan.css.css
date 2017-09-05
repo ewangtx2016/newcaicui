@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* CSS Document */
+body {font:14px "microsoft Yahei","Arial",sans-serif; min-width:1200px; color:#333;}
+html,body{-webkit-text-size-adjust:none;}
+body,form,input,p,ul,li,h1,h2,h3,h4,h5,h6,table,th,td{padding:0;margin:0;}
+ul,li{list-style:none;}
+img {border:0;line-height:0; vertical-align: middle;}
+a{text-decoration:none;transition:all 0.3s;-webkit-transition:all 0.3s;color:#333;}
+a:hover {color:#f60;}
+.clear{clear:both;width:100%;overflow:hidden;height:0; display:block;}
+b{ font-weight:normal;}
+i{ font-style:normal;}
+input, textarea ,button,select{ margin:0; font:12px "Microsoft YaHei"; color:#979797; border:0 none; padding:0; vertical-align:middle;}
+.cl{clear:both;overflow:hidden;}
+
+/*公用*/
+.center{width:1200px;margin:0 auto;}
+.l_fl{float:left;}
+.l_fr{float:right;}
+
+
+
+.jtz_txt{ text-align: center; padding-bottom:0;}
+.jtz_txt h2{font-size: 24px;font-weight:normal;}
+.jtz_txt span{font-size: 36px; color: #2e393f; font-weight: bold; display: block; text-transform:uppercase;font-family:Arial;}
+.jtz_txt b{ color: #555555;line-height:22px; display:block;margin:12px 0 0; }
+.jtz_txt i{display:inline-block;width:96px;height:14px;background:url(../../images/zb/jtin_bt.png) no-repeat;margin:4px 0 0;}
+
+
+/*头部*/
+.l_head_87{height:398px;position:relative;}
+.l_head_87 .jtz_txt{position:absolute;left:0;right:0;top:87px;bottom:0;margin:auto;height:92px;background:none;}
+.l_head_87 .jtz_txt span,
+.l_head_87 .jtz_txt h2{color:#fff;}
+
+
+/*分页*/
+.jtz_page{text-align: center;}
+.jtz_page li{display: inline-block;}
+.jtz_page li a{background: #fff; border:1px solid #f2f2f2; display: inline-block; height: 36px; line-height: 36px; padding:0 15px; color: #454545; font-size: 12px;}
+.jtz_page li .one,
+.jtz_page li a:hover{background: #f71c5c; border-color: #f71c5c; color: #fff;}
+.jtz_page .li{padding: 0 5px; }
+
+/*集团——联系我们*/
+.jt_main{background:#f2f5fa;}
+
+
+/*集团-关于中博-创新教育*/
+.jt_gybo_cxjy{padding:40px 0;}
+.jt_gybo_cxjy_b1 {margin:0 -10px; text-align:center;}
+.jt_gybo_cxjy_b1 .icon{line-height:90px;width:90px;height:90px;background:#f71c5c;}
+.jt_gybo_cxjy_b1 .icon img{vertical-align:middle;max-height:100%;max-width:100%;}
+.jt_gybo_cxjy_b1 li{padding:0 10px;width:50%;box-sizing:border-box;margin:0 0 20px;}
+.jt_gybo_cxjy_b1 .l_box{background:#fff;height:292px;box-sizing:border-box;padding:30px 30px 30px 0;overflow:hidden;}
+.jt_gybo_cxjy_b1 .icon{float:left;margin:0 30px 0 0;}
+.jt_gybo_cxjy_b1 .l_tit{}
+.jt_gybo_cxjy_b1 .l_cont{overflow:hidden;color:#666;line-height:24px;margin:15px 0 0;}
+
+
+
+/*集团-关于中博-加入中博*/
+.jt_gyzb_jrzb{padding:88px 0 68px;}
+.jt_gyzb_jrzb  .jt_gyzb_jrzb_ul li{width:33.3%;}
+.jt_gyzb_jrzb .jt_gyzb_jrzb_ul{margin:50px -10px 0;}
+.jt_gyzb_jrzb_ul li{padding:0 10px;box-sizing:border-box;margin:0 0 20px;}
+
+
+.jt_gyzb_jrzb_ul .l_box{background:#fff;padding:20px 30px;overflow:hidden;box-sizing:border-box;position:relative;
+ -webkit-transition-duration: 0.5s;
+ -moz-transition-duration: 0.5s;
+ -ms-transition-duration: 0.5s;
+ -o-transition-duration: 0.5s;
+ transition-duration: 0.5s;
+ -webkit-transform: scale(1,1);
+ -moz-transform: scale(1,1);
+ -ms-transform: scale(1,1);
+ -o-transform: scale(1,1);
+ transform: scale(1,1);
+}
+.jt_gyzb_jrzb_ul > a:hover .l_box{
+  -webkit-box-shadow:  0px 2px 8px rgba(0,0,0,.5);
+  -moz-box-shadow:  0px 2px  8x rgba(0,0,0,.5);
+  box-shadow:  0px 2px 8px rgba(0,0,0,.5);
+
+ -webkit-transform: scale(1.01,1.01);
+ -moz-transform: scale(1.01,1.01);
+ -ms-transform: scale(1.01,1.01);
+ -o-transform: scale(1.01,1.01);
+ transform: scale(1.01,1.01);
+
+}
+
+.jt_gyzb_jrzb_ul .l_box > h2{
+ font-size:18px;
+ margin-bottom:20px;
+}
+.jt_gyzb_jrzb_ul .l_tit{font-size:16px;line-height:22px;}
+.jt_gyzb_jrzb_ul .intro .l_xian:after{content:"";display:block;width:1px;height:14px;background:#f2f5fa;position:absolute;left:0;top:0;bottom:0;margin:auto;}
+.jt_gyzb_jrzb_ul .intro .l_xian:before{content:"";display:block;width:1px;height:14px;background:#f2f5fa;position:absolute;right:0;top:0;bottom:0;margin:auto;}
+.jt_gyzb_jrzb_ul .intro{color:#666;margin:10px 0 17px -15px;}
+.jt_gyzb_jrzb_ul i{padding:0 15px;display:inline-block;position:relative;}
+.jt_gyzb_jrzb_ul .fen_xian{border-bottom:1px dashed #bfbfbf;width:100%;height:10px;}
+.jt_gyzb_jrzb_ul .border-intro{margin:0 -3px; height: 60px; overflow: hidden;}
+.jt_gyzb_jrzb_ul span{display:inline-block;padding:0 22px;border:1px solid #ff6e98;color:#ff6e98;box-sizing:border-box;margin:0 3px;line-height:24px;border-radius:3px; margin-bottom:5px;}
+.jt_gyzb_jrzb_ul .i_red{color:#f71c5c;}
+.jt_gyzb_jrzb_ul .l_gshi{margin:19px 0 0;}
+.jt_gyzb_jrzb_ul .l_time{color:#bfbfbf;margin:7px 0 0;font-size:12px;}
+.l_jiaji{position:absolute;right:0;top:0;width:37px;height:36px;background:url(../../images/zb/jt_jiaji.gif) no-repeat;}
+
+
+/*集团-关于中博-企业荣誉*/
+.jt_gyzb_qyry{padding:40px 0 60px;}
+.jt_gyzb_qyry_ul{margin:0 -11px 10px;}
+.jt_gyzb_qyry_ul li{width:25%;height: 270px; overflow: hidden; padding:0 11px;margin-bottom:22px;box-sizing: border-box;}
+.jt_gyzb_qyry_ul li:hover{
+    cursor: default;
+}
+.jt_gyzb_qyry_ul li:hover .l_box{
+    background: #f71c5c;
+}
+
+.jt_gyzb_qyry_ul li:hover .l_txt{
+    color: #fff;
+}
+
+.jt_gyzb_qyry_ul .l_box{text-align: center;background:#fff; padding-bottom: 10px; transition-duration: 0.5s;}
+.jt_gyzb_qyry_ul .img{display: table;width:100%;
+ height: 193px;
+ overflow: hidden;
+}
+.jt_gyzb_qyry_ul .img span{display: table-cell;padding:3px;}
+.jt_gyzb_qyry_ul .img img{height:100%;max-width:100%;
+    width:100%;}
+.jt_gyzb_qyry_ul .l_txt{
+	height: 63px;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    padding-bottom: 33px;
+    box-sizing: border-box;
+}
+
+ 
+/*集团-创始人寄语*/
+.jt_csrjy{padding:40px 0 60px;}
+.jt_csrjy_box{background:#fff;}
+.jt_csrjy_box .l_top{text-align: center;background:#3d4959;}
+.jt_csrjy_box .img{display: inline-block;}
+.jt_csrjy_box .img img{}
+.jt_csrjy_box .l_bottom{padding:5px 148px 60px;}
+.jt_csrjy_box h4{margin:50px 0 24px;}
+.jt_csrjy_box{line-height:24px;color:#555;}
+
+
+/*集团-合作伙伴*/
+.jt_hzhb{padding:40px 0 60px;}
+.jt_hzhb_ul{margin:0 -11px 10px;}
+.jt_hzhb_ul li{width:20%;
+    height:152px;
+    overflow: hidden;
+    padding:0 11px;box-sizing: border-box;text-align: center;margin:0 0 22px;}
+.jt_hzhb_ul .l_box{background:#fff;display: block;position:relative;padding:20px 15px;}
+.jt_hzhb_ul .img{display: table;width:100%;height:80px;}
+.jt_hzhb_ul .img span{display: table-cell;vertical-align: middle;padding:5px;}
+.jt_hzhb_ul .img img{max-width: 100%;max-height: 100%;}
+.jt_hzhb_ul .l_txt{line-height:22px;padding:2px 10px;}
+
+.jt_hzhb_ul .h_txt{position: absolute;width:100%;height:100%;background:#f71c5c;top:0;left:0;opacity: 0;transition: all 0.6s;-webkit-transition:all 0.6s;filter:Alpha(opacity=0);}
+.jt_hzhb_ul .table_box{display: table;width:100%;height:100%;padding:20px;box-sizing: border-box;}
+.jt_hzhb_ul .table_box h3{display: table-cell;vertical-align: middle;text-align: center;color:#fff;line-height:24px;}
+
+.jt_hzhb_ul.hov .l_box:hover .h_txt{opacity: 1;filter:Alpha(opacity=100);}
+
+
+/*集团-奖学金*/
+.jt_jxj .yein_zbxy{padding-bottom:120px;}
+.jt_jxj .jt_jxt_xy{}
+.yein_zbxy.jt_jxj_xy{background:url(../../images/zb/ckxm.zbxy_bg.jpg) no-repeat;}
+.yein_zbxy.jt_jxj_xy li:before{background:#f71c5c;}
+.yein_zbxy.jt_jxj_xy .swiper-wrapper{background:url(../../images/zb/yein_zbxy_xian_1.gif) repeat-y center top;}
+
+.jtz_txt .l_intro{font-size:16px;line-height:50px;font-weight:bold;color:#555;}
+.jtz_txt .tit_red{color:#f71c5c;font-size:36px;font-style:normal;}
+.jt_jxj_xy .box.hov .li{transition:all 0.6s;-webkit-transition:all 0.6s;}
+.jt_jxj_xy .box.hov li:hover .li_box {background:#f71c5c;}
+.jt_jxj_xy .box.hov li:hover .right .span1,
+.jt_jxj_xy .box.hov li:hover .left span.span3,
+.jt_jxj_xy .box.hov li:hover .left span.span2 {color:#fff;}
+.jt_jxj_xy .box.hov li:hover .right .span2{color:#fddfe5;}
+.jt_jxj_xy .box.hov li:hover .right i{background:url(../../images/zb/yein_zbxy_i1_1.png) no-repeat left top;}
+.jt_jxj_xy .box.hov li:hover .right .i2{background-position:right top;}
+.yein_zbxy .right .span2{padding:0;}
+.yein_zbxy .right i{position:static;display:inline-block;margin:0 8px 0 0;}
+.yein_zbxy .right .i2{margin:0 0 0 8px;}
+
+.yein_zbxy  .box.hov .li2:hover .li_box:before{background:url(../../images/zb/ckxm_zbxy_z1_1.png) no-repeat;}
+
+
+.yein_zbxy  .box.hov li:hover .li_box:before{background:url(../../images/zb/ckxm_zbxy_z1.png) no-repeat;}
+
+.jt_jxj_titMiddle{text-align:center;line-height:90px;background:#f71c5c;color:#fff; font-size:24px;font-weight:bold;}
+
+.jt_jxj_jxj{margin:0 -10px;padding:90px 0;}
+.jt_jxj_jxj>li{width:50%;padding:0 10px;box-sizing:border-box;}
+.jt_jxj_jxj .l_box{background:#fff;height:307px;overflow:hidden;padding:48px 50px 40px;box-sizing:border-box;}
+.jt_jxj_jxj .l_tit{}
+.jt_jxj_jxj .l_tit i{}
+.jt_jxj_jxj ol{margin:25px 0 27px;}
+.jt_jxj_jxj ol li{clear:both;overflow:hidden;color:#666666;line-height:24px;}
+.jt_jxj_jxj ol b{float:left;margin:0 8px 0 0;}
+.jt_jxj_jxj ol .list_txt{overflow:hidden;}
+.jt_jxj_jxj .l_intro{font-size:12px;color:#999;padding-left:5px;}
+
+
+/*集团-公益活动*/
+.jt_gyhd{padding:40px 0;}
+
+.jt_gyhd_top{margin:0 -11px;position:relative;}
+.jt_gyhd_top .l_box{position:relative;background:#fff;}
+.jt_gyhd_top .sp_li .l_box{height:513px;}
+.jt_gyhd_top li{width:33.3%;padding:0 11px;margin:0 0 20px;box-sizing:border-box;}
+.jt_gyhd_top .sp{width:66.6%;}
+
+.jt_gyhd_top .img{display:block;text-align:center;}
+.jt_gyhd_top .img img{}
+.jt_gyhd_top .l_txtBox{position:absolute;width:497px;height:305px;background:rgba(255,255,255,0.95); top:27px;left:27px;box-sizing:border-box;padding:40px;}
+.jt_gyhd_top .l_tit{}
+.jt_gyhd_top .l_txt{padding:30px;}
+.jt_gyhd_top .l_tit_con{font-size:16px;font-weight:normal; overflow: hidden; height: 22px; line-height: 22px;}
+.jt_gyhd_top .l_intro{color:#666;line-height:24px;margin:15px 0 0;}
+.jt_gyhd_top .l_intro_con{color:#666;line-height:22px;margin:15px 0 0;max-height:66px;overflow:hidden;}
+.jt_gyhd_top .l_txtBox .jtin_btn{position:absolute;bottom:30px;right:30px;}
+.jt_gyhd_top .jtin_btn{background:#f71c5c;height:30px;line-height:30px;width:107px;}
+.jt_gyhd_top  .btn_box{clear:both;overflow:hidden;margin:24px 0 0;}
+.jt_gyhd_top  .btn_box a{float:right;}
+.jt_gyhd_top li:not(.sp) .l_box{padding:3px 0;transition:all 0.6s;-webkit-transition:all 0.6s;}
+.red_border_btn{transition:all 0.6s;-webkit-transition:all 0.6s;border:1px solid #f71c5c;width:103px;height:30px;line-height:30px;color:#f71c5c;display:block;border-radius:3px;text-align:center;}
+
+.jt_gyhd_top.hov .jtin_btn:hover{background:#f60;color:#fff;}
+
+
+
+.jt_gyhd_top.hov .li .l_box:hover{background:#f71c5c;color:#fff;}
+.jt_gyhd_top.hov .li .l_box:hover .l_tit_con a {color:#fff;}
+.jt_gyhd_top.hov .li .l_box:hover .l_intro_con {color:#fff;color:rgba(255,255,255,0.6);}
+.jt_gyhd_top.hov .li .l_box:hover .red_border_btn {color:#fff;border:1px solid #fff;}
+
+/*集团-关于中博-加入中博-详情*/
+
+.jt_gyzb_jrzb_xq{padding:40px 0;}
+.left_800{width:66.6%;float:left;}
+.right_400{width:33.3%;float:right;}
+.jt_gyzb_jrzb_ul{padding:0 10px;box-sizing:border-box;}
+.jt_gyzb_jrzb_xq .jt_gyzb_jrzb_ul>li{padding:0;}
+.jt_gyzb_jrzb_ul.left_800 span{padding:0 15px;}
+.jt_gyzb_jrzb_ul.left_800 .l_box{height:auto;}
+.jt_gyzb_jrzb_ul .l_time_t{float:right;font-style:normal;}
+.jt_gyzb_jrzb_ul.left_800 .l_time{display:none;}
+.jt_gyzb_jrzb_ul.left_800 .fen_xian{border-bottom:1px solid #e5e5e5;height:10px;}
+
+
+.jt_gyzb_jrzb_ul.left_800 .l_cont{line-height:24px;padding:15px 0 40px;border-bottom:1px dashed #dddddd;}
+
+.jt_gyzb_jrzb_ul.left_800 .l_cont .li_li .title{
+    font-weight: bold;
+}
+
+.jt_gyzb_jrzb_ul.left_800 .l_cont .li_li{
+    margin-bottom:20px;
+}
+
+.jt_gyzb_jrzb_ul.left_800 p{color:#666;}
+.jt_gyzb_jrzb_ul.left_800 .l_box{padding:45px 30px 35px; }
+.l_xq_fenyq{padding:20px 0 0;}
+.l_xq_fenyq a{display:block;line-height:22px;margin-bottom:5px;}
+.l_xq_fenyq .red_border_btn{position:absolute;right:30px;bottom:28px; line-height: 30px;}
+
+/*集团-关于中博-师资团队-详情*/
+.jt_gyzb_sztd_xq{padding:40px 0 60px;}
+.jt_gyzb_sztd_xqul{padding:30px 30px 20px;background:#fff;}
+.jt_gyzb_sztd_xqul .cont_box .l_top{text-align:center;}
+
+.jt_gyzb_sztd_xqul .l_fl{margin:60px 0 0;width:381px;}
+.jt_gyzb_sztd_xqul .l_fl .img{line-height:0;margin:0 0 28px;}
+.jt_szxq_tit{padding:0 0 16px;border-bottom:1px solid #f71c5c;margin:0 0 20px;}
+.jt_szxq_tit .tit_26{font-size:26px;}
+.jt_szxq_tit  .tit_intro{font-size:12px;color:#666;line-height:26px;display:inline-block;}
+.jt_gyzb_sztd_xqlist {margin: 0 0 28px;}
+.jt_gyzb_sztd_xqlist  .list{clear:both;overflow:hidden;padding:6px 0;}
+.jt_gyzb_sztd_xqlist  i{float:left;line-height:24px;}
+.jt_gyzb_sztd_xqlist  .l_p{overflow:hidden;color:#7b7f85;line-height:24px;}
+.jt_gyzb_sztd_xqlist .l_btn{display:inline-block;height:29px;padding:0 10px;background:#f71c5c;color:#fff;margin:0 10px  0 0;line-height:28px;}
+
+.jt_gyzb_sztd_xqul .l_fr{width:713px;margin:60px 0 0 40px;}
+ .jt_szxq_titcon {padding:0 0 8px;border-bottom:1px solid #d3d6dc;}
+.jt_szxq_titcon .tit_span{font-size:16px;display:inline-block;padding:0 6px;position:relative;}
+.jt_szxq_titcon .tit_span:after{display:block;position:absolute;content:"";width:100%;height:1px;background:#f71c5c;left:0;bottom:-9px;line-height:24px;}
+.jt_gyzb_sztd_xqul  .l_txt{color:#7b7f85;line-height:24px;padding:12px 0 32px;}
+
+/*集团-关于中博-师资团队*/
+.jt_gyzb_sztd{padding:40px 0 60px;}
+.jt_gyzb_sztd_ul{margin:0 -11px 10px;}
+.jt_gyzb_sztd_ul li{width:33.3%;padding:0 11px;box-sizing:border-box;margin:0 0 20px;}
+
+.jt_gyzb_sztd_ul li:hover .l_box{
+    background: #f71c5c;
+}
+
+.jt_gyzb_sztd_ul li:hover .l_txt a,.jt_gyzb_sztd_ul li:hover .intro{
+    color: rgba(255,255,255,0.8);
+}
+
+.jt_gyzb_sztd_ul li:hover  .red_border_btn{
+    border:1px solid #fff;
+}
+
+
+
+.jt_gyzb_sztd_ul .l_box{background:#fff;padding:3px; transition-duration:0.5s; }
+.jt_gyzb_sztd_ul .img{line-height:0;display:block;margin:0 auto;
+    height:352px;
+    overflow: hidden;
+}
+.jt_gyzb_sztd_ul .img img{
+    width:100%;
+    height:100%;
+}
+.jt_gyzb_sztd_ul .l_txt{line-height:20px;padding:27px;}
+.jt_gyzb_sztd_ul .l_tit{font-size:16px;line-height:22px;}
+.jt_gyzb_sztd_ul .intro{color:#999;margin:8px 0 0;max-height:44px;overflow:hidden;}
+.jt_gyzb_sztd_ul .red_border_btn{margin:28px 0 0;}
+
+
+
+.jt_gybo_cxjy_b1 .l_tit{text-align:left;}
+.jt_gybo_cxjy_b1 .l_cont{text-align:left;}
+
+
+
+/*招聘页面列表样式*/
+.job_ul{
+   border: 1px solid #ff6e98;
+   color: #ff6e98;
+   box-sizing: border-box;
+   margin: 10px 0 5px  0px;
+   line-height: 24px;
+   border-radius: 3px;
+   padding:10px 0;
+}
+
+.job_ul .jb_li{
+ padding:0 10px;
+
+}
+
+
+.job_ul .jb_li em{
+ font-style: normal;
+ font-weight:bold;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$job[title]}</title>
+<meta name="Keywords" content="{$job[keywords]}" />
+<meta name="Description" content="{$job[jianjie]}" />
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}zb/css.css" />
+<link rel="stylesheet" href="{CSS_PATH}zb/jt_liyulan.css.css"/>
+<script src="{JS_PATH}zb/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="{JS_PATH}zb/jt_head.js"></script>
+</head>
+
+<body>
+{template "content","header"}
+<div class="l_head_87" style="background-image:url({$create[pic]});">
+  <div class="jtz_txt">
+    <h2>{$create[one]}</h2>
+    <span>{$create[english]}</span> <i></i> </div>
+</div>
+<div class="jt_main jt_gyzb_jrzb_xq">
+  <div class="center cl">
+    <ul class="jt_gyzb_jrzb_ul left_800">
+      <li class="">
+        <div  class="l_box"> <a class="l_tit">{$jobs[position]}</a>
+          <div class="intro"> <i class="i_red">{$jobs[money]}</i><i class="l_xian">{parentlinkagename($jobs[city])}</i><i>{$jobs[education]}</i> <em class="l_time_t">发布日期：{date('Y-m-d',$jobs['addtime'])}</em> </div>
+          <div class="border-intro"> {welfare($jobs['welfare'],0)} </div>
+
+          <div class="fen_xian"></div>
+          <div class="l_gshi">{$jobs[company]}</div>
+          <div class="l_time">发布日期：{date('Y-m-d',$jobs['addtime'])}</div>
+          <em class="l_jiaji"></em>
+          <div class="l_cont">
+
+            <div class="li_li">
+              <div class="title">职位描述：</div>
+              <div class="conent">{$jobs[introduce]}</div>
+            </div>
+
+            <div class="li_li">
+              <div class="title">任职要求：</div>
+              <div class="conent">{$jobs[requirement]}</div>
+            </div>
+
+            <div class="li_li">
+              <div class="title">岗位职责：</div>
+              <div class="conent">{$jobs[duty]}</div>
+            </div>
+
+
+            <div class="li_li">
+              <div class="title">工作地点：</div>
+              <div class="conent">{$jobs[address]}</div>
+            </div>
+
+          </div>
+          <div class="l_xq_fenyq"> 上一条：<a href="/jobs-{$upspage['id']}.html">{$upspage['title']}</a> 下一条：<a href="/jobs-{$downspage['id']}.html">{$downspage['title']}</a> <a href="/job.html" class="red_border_btn">返回列表</a> </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="jt_gyzb_jrzb_ul l_fr right_400">
+        {pc:get sql="SELECT * FROM `zb_gyzb_job` WHERE status_del=0 ORDER BY addtime DESC" num=4}
+         {loop $data $mtbd}
+      <li>
+        <div  class="l_box"> <a href="/jobs-{$arr['id']}.html" class="l_tit">{intercept($arr['position'],0,14)}</a>
+          <div class="intro"> <i class="i_red">{$jobs[money]}</i><i class="l_xian">北京</i><i>{$jobs[education]}</i> </div>
+          <div class="border-intro"> {welfare($arr['welfare'],3)}  </div>
+          <div class="fen_xian"></div>
+          <div class="l_gshi">{$jobs[company]}</div>
+          <div class="l_time">发布日期：{date('Y-m-d',$jobs['addtime'])}</div>
+          {if $arr[hot]==1}<em class="l_jiaji"></em>{/if} </div>
+      </li>{/loop}
+          {/pc}
+    </ul>
+  </div>
+</div>
+{template "content","footer"}
+</body>
+</html>
